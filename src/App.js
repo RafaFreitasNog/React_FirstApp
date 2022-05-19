@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Subtitle } from "./Text";
+import { Subtitle2 } from "./Text";
+import LoremIpsumTxt from "./components/LoremIpsum";
+
+
+function HelloWorld() {
+  return <h1>Hello, World!</h1>
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <HelloWorld/>
+        <Subtitle/>
+        <Subtitle2/>
+        <LoremIpsumTxt/>
     </div>
   );
 }
